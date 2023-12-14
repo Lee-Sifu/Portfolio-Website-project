@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans-serif;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+header .logo
+{ 
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3em;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    text-decoration: none;
+    color:aquamarine;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+header ul li.active a,
+header ul li:hover a
+{
+    color: blue;
+}
+#home
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(55, 56, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+#home::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: yellowgreen;
+    border-top-right-radius: 25vw;
+    border-top-left-radius:25vw;
+}
+#header .content
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2
+{
+    position: relative;
+    font-size: 5em;
+    color: aquamarine;
+}
+#home .content p
+{
+    position: relative;
+    color: #bb1313;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: rgb(65, 88, 2);
+    color: black;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#home .Jason
+{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 90vh;
+
+}
+#about
+#Portfolio
+#Contact
+{
+    position: relative;
+    background: rgb(81, 74, 74);
+    min-height: 100vh;
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sectext
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.sectext h2
+{
+    font-size: 3em;
+    color: #fff;
+}
+.sectext p
+{
+  max-width: 700px;  
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#portfolio
+{
+    background: cornflowerblue;
+    text-align: center;
+}
+#portfolio .content
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 40px o;
+}
+#portfolio .content .imgBx
+{
+    position: relative;
+}
+#portfolio .content .imgBx img
+{
+    max-width: 100%;
+}
+#contact .content
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#contact .content a
+{
+    background: tan;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+    transition: 0.5s;
+}
+#content .content a:hover
+{
+    background: olive;
+}
